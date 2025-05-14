@@ -102,27 +102,37 @@ Aplicação web para gerenciamento de produtos, com foco em:
 ## ⚙️ Como rodar o projeto
 
 1. **Clone o repositório:**
+
    ```bash
    git clone <repo-url>
    cd prodominus
    ```
+
 2. **Instale as dependências:**
+
    ```bash
    pnpm install # ou npm install ou yarn install
    ```
+
 3. **Configure as variáveis de ambiente:**
+
    ```bash
    cp .env.example .env.local
    # Edite se necessário
    ```
+
 4. **Inicie o mock da API (JSON Server):**
+
    ```bash
    npx json-server --watch db.json --port 3001
    ```
+
 5. **Rode o projeto:**
+
    ```bash
    pnpm dev # ou npm run dev ou yarn dev
    ```
+
 6. **Acesse:** [http://localhost:3000](http://localhost:3000)
 
 ---
@@ -131,9 +141,11 @@ Aplicação web para gerenciamento de produtos, com foco em:
 
 - Todos os testes estão em `__tests__/`
 - Para rodar:
+
   ```bash
   pnpm test # ou npm test ou yarn test
   ```
+
 - Testes de snapshot, unitários e integrados
 
 ---
