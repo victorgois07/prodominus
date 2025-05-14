@@ -51,10 +51,9 @@ describe("ListProductsUseCase", () => {
     const error = new Error("Repository error");
     (mockRepository.findAll as any).mockRejectedValue(error);
 
-    // Spy on console.error to verify it's called
     const consoleErrorSpy = vi
       .spyOn(console, "error")
-      .mockImplementation(() => {});
+      .mockImplementation(() => { });
 
     await expect(useCase.execute()).rejects.toThrow("Failed to list products");
     expect(mockRepository.findAll).toHaveBeenCalledTimes(1);

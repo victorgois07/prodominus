@@ -21,7 +21,7 @@ export function FavoritesManagement() {
         {favorites.length === 0 ? (
           <p className="text-gray-500">Nenhum produto favoritado.</p>
         ) : (
-          <ProductGrid products={favorites} />
+          <ProductGrid products={favorites} modal />
         )}
       </Modal>
     </>

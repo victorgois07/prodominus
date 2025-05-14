@@ -26,10 +26,8 @@ describe("useLoadingBackdrop", () => {
     useLoadingBackdrop.getState().open();
     useLoadingBackdrop.getState().close();
 
-    // Initially should still be open
     expect(useLoadingBackdrop.getState().isOpen).toBe(true);
 
-    // After 1 second should be closed
     vi.advanceTimersByTime(1000);
     expect(useLoadingBackdrop.getState().isOpen).toBe(false);
   });
@@ -57,7 +55,6 @@ describe("useLoadingBackdrop", () => {
     useLoadingBackdrop.getState().open();
     useLoadingBackdrop.getState().close();
 
-    // Should still be open immediately after close is called
     expect(useLoadingBackdrop.getState().isOpen).toBe(true);
   });
 
@@ -65,11 +62,9 @@ describe("useLoadingBackdrop", () => {
     useLoadingBackdrop.getState().open();
     useLoadingBackdrop.getState().close();
 
-    // Should still be open before 1 second
     vi.advanceTimersByTime(999);
     expect(useLoadingBackdrop.getState().isOpen).toBe(true);
 
-    // Should be closed after 1 second
     vi.advanceTimersByTime(1);
     expect(useLoadingBackdrop.getState().isOpen).toBe(false);
   });

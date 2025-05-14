@@ -51,21 +51,19 @@ describe("ProductForm", () => {
   it("should show validation errors for invalid inputs", async () => {
     render(<ProductForm onSubmit={mockOnSubmit} />);
 
-    // Tocar em todos os campos para ativar a validação
     const titleInput = screen.getByLabelText("Título");
     const priceInput = screen.getByLabelText("Preço");
     const descriptionInput = screen.getByLabelText("Descrição");
     const categoryInput = screen.getByLabelText("Categoria");
     const imageInput = screen.getByLabelText("URL da Imagem");
 
-    // Simular entrada de valores inválidos
-    fireEvent.change(titleInput, { target: { value: "ab" } }); // Menos de 3 caracteres
-    fireEvent.change(priceInput, { target: { value: "0" } }); // Preço zero
-    fireEvent.change(descriptionInput, { target: { value: "curta" } }); // Menos de 10 caracteres
-    fireEvent.change(categoryInput, { target: { value: "a" } }); // Menos de 2 caracteres
-    fireEvent.change(imageInput, { target: { value: "invalid-url" } }); // URL inválida
+    fireEvent.change(titleInput, { target: { value: "ab" } }); // < 3 chars
+    fireEvent.change(priceInput, { target: { value: "0" } });   // not positive
+    fireEvent.change(descriptionInput, { target: { value: "curto" } }); // < 10 chars
+    fireEvent.change(categoryInput, { target: { value: "a" } }); // < 2 chars
+    fireEvent.change(imageInput, { target: { value: "invalid-url" } }); // invalid URL
 
-    // Simular interação com os campos
+    // Dispara validação ao "blur"
     fireEvent.blur(titleInput);
     fireEvent.blur(priceInput);
     fireEvent.blur(descriptionInput);
@@ -75,18 +73,21 @@ describe("ProductForm", () => {
     const submitButton = screen.getByRole("button", { name: "Salvar" });
     fireEvent.click(submitButton);
 
-    // Verificar as mensagens de erro
     await waitFor(() => {
       expect(
         screen.getByText("Título deve ter no mínimo 3 caracteres")
       ).toBeInTheDocument();
+
       expect(screen.getByText("Preço deve ser positivo")).toBeInTheDocument();
+
       expect(
         screen.getByText("Descrição deve ter no mínimo 10 caracteres")
       ).toBeInTheDocument();
+
       expect(
         screen.getByText("Categoria deve ter no mínimo 2 caracteres")
       ).toBeInTheDocument();
+
       expect(screen.getByText("URL da imagem inválida")).toBeInTheDocument();
     });
   });
@@ -96,14 +97,12 @@ describe("ProductForm", () => {
       <ProductForm initialValues={mockInitialValues} onSubmit={mockOnSubmit} />
     );
 
-    // Preencher todos os campos necessários
     const titleInput = screen.getByLabelText("Título");
     const priceInput = screen.getByLabelText("Preço");
     const descriptionInput = screen.getByLabelText("Descrição");
     const categoryInput = screen.getByLabelText("Categoria");
     const imageInput = screen.getByLabelText("URL da Imagem");
 
-    // Simular mudanças nos campos para tornar o formulário "dirty"
     fireEvent.change(titleInput, { target: { value: "Novo Título" } });
     fireEvent.change(priceInput, { target: { value: "1234,56" } });
     fireEvent.change(descriptionInput, { target: { value: "Nova Descrição" } });
@@ -112,7 +111,6 @@ describe("ProductForm", () => {
       target: { value: "https://example.com/nova-imagem.jpg" },
     });
 
-    // Aguardar a validação do formulário
     await waitFor(() => {
       const submitButton = screen.getByRole("button", { name: "Salvar" });
       expect(submitButton).not.toBeDisabled();

@@ -4,7 +4,6 @@ import { useConfirmDialog } from "@/business/store/useConfirmDialog";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-// Mock the hooks
 vi.mock("@/business/hooks/useProducts", () => ({
   useProducts: vi.fn(),
 }));
@@ -49,7 +48,6 @@ describe("DeleteAllButton", () => {
     const button = screen.getByText("Excluir Todos");
     fireEvent.click(button);
 
-    // Get the confirm callback from the show function
     const confirmCallback = mockShow.mock.calls[0][1];
     await confirmCallback();
 

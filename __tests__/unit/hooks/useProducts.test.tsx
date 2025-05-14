@@ -64,7 +64,6 @@ describe("useProducts", () => {
     (container.resolve as any).mockReturnValue(mockProductController);
     queryClient.clear();
 
-    // Reset mock filters state
     mockFilters.page = 1;
     mockFilters.category = "";
     mockFilters.sort = null;
@@ -80,7 +79,6 @@ describe("useProducts", () => {
 
     const { result } = renderHook(() => useProducts(), { wrapper });
 
-    // Initially loading should be true
     expect(result.current.loading).toBe(true);
 
     await waitFor(() => {
@@ -228,28 +226,22 @@ describe("useProducts", () => {
 
     const { result, rerender } = renderHook(() => useProducts(), { wrapper });
 
-    // Wait for initial data load
     await waitFor(() => {
       expect(result.current.loading).toBe(false);
     });
 
-    // Check initial page
     expect(result.current.page).toBe(1);
     expect(result.current.totalPages).toBe(2);
     expect(result.current.products.length).toBe(8);
 
-    // Change page
     result.current.setPage(2);
 
-    // Force a rerender to ensure the hook updates
     rerender();
 
-    // Wait for the page change to be reflected
     await waitFor(() => {
       expect(result.current.page).toBe(2);
     });
 
-    // Check second page
     expect(result.current.products.length).toBe(4);
     expect(result.current.products[0].id).toBe(9);
   });
@@ -267,12 +259,10 @@ describe("useProducts", () => {
       expect(result.current.loading).toBe(false);
     });
 
-    // Set initial category
     await act(async () => {
       result.current.setCategory("test1");
     });
 
-    // Update product with new category
     const updatedProduct = {
       id: 1,
       title: "Updated Product",
@@ -284,7 +274,6 @@ describe("useProducts", () => {
       await result.current.updateProduct(1, { category: "test3" });
     });
 
-    // Category should be reset because new category is not in the list
     expect(result.current.category).toBe("");
   });
 
@@ -301,19 +290,16 @@ describe("useProducts", () => {
       expect(result.current.loading).toBe(false);
     });
 
-    // Set initial category
     await act(async () => {
       result.current.setCategory("test1");
     });
 
-    // Delete the only product in the category
     mockProductController.deleteProduct.mockResolvedValue(undefined);
 
     await act(async () => {
       await result.current.deleteProduct(1);
     });
 
-    // Category should be reset because the category no longer exists
     expect(result.current.category).toBe("");
   });
 
@@ -400,13 +386,11 @@ describe("useProducts", () => {
       expect(result.current.loading).toBe(false);
     });
 
-    // Change mock data
     const newMockProducts = [
       { id: 2, title: "Product 2", price: 200, category: "test" },
     ];
     mockProductController.listProducts.mockResolvedValue(newMockProducts);
 
-    // Refresh products
     await act(async () => {
       await result.current.refreshProducts();
     });

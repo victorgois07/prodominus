@@ -16,7 +16,7 @@ const mockProducts = [
 
 vi.mock("tsyringe", () => ({
   injectable: () => (target: any) => target,
-  inject: () => (target: any, propertyKey: string) => {},
+  inject: () => (target: any, propertyKey: string) => { },
   container: {
     registerSingleton: vi.fn(),
     resolve: vi.fn(() => ({
@@ -37,15 +37,12 @@ describe("Home Page E2E", () => {
   it("should render the home page", async () => {
     renderWithQueryClient(<Home />);
 
-    // Aguarda o carregamento inicial
     await waitFor(() => {
       expect(screen.getByText("Test Product")).toBeInTheDocument();
     });
 
-    // Verifica se o título da página está presente
     expect(screen.getByText("Products")).toBeInTheDocument();
 
-    // Verifica se o preço está formatado corretamente
     expect(
       screen.getByText(
         (_, element) => element?.textContent?.replace(/\s/g, "") === "R$99,99"
@@ -69,16 +66,13 @@ describe("Home Page E2E", () => {
   it("should handle product click", async () => {
     renderWithQueryClient(<Home />);
 
-    // Aguarda o carregamento inicial
     await waitFor(() => {
       expect(screen.getByText("Test Product")).toBeInTheDocument();
     });
 
-    // Simula o clique no produto
     const productCard = screen.getByText("Test Product").closest("div");
     fireEvent.click(productCard!);
 
-    // Verifica se os detalhes do produto são exibidos
     expect(screen.getByText("Test Description")).toBeInTheDocument();
   });
 });

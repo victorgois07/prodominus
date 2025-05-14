@@ -78,7 +78,6 @@ describe("ProductManagement", () => {
   it("should open modal with product data when editing", async () => {
     render(<ProductManagement />);
 
-    // Simular clique no botão de editar
     const editButton = screen.getByLabelText("edit");
     fireEvent.click(editButton);
 

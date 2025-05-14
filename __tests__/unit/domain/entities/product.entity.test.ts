@@ -1,5 +1,5 @@
+import { Product, ProductRepository } from "@/domain/entities/product.entity";
 import { describe, expect, it } from "vitest";
-import type { Product, ProductRepository } from "../product.entity";
 
 describe("Product Entity", () => {
   it("should have all required properties", () => {
@@ -67,8 +67,8 @@ describe("ProductRepository Interface", () => {
         category: product.category || "default",
         image: product.image || "default.jpg",
       }),
-      delete: async () => {},
-      deleteAll: async () => {},
+      delete: async () => { },
+      deleteAll: async () => { },
     };
 
     expect(repository).toHaveProperty("findAll");
@@ -92,19 +92,16 @@ describe("ProductRepository Interface", () => {
         category: product.category || "default",
         image: product.image || "default.jpg",
       }),
-      delete: async () => {},
-      deleteAll: async () => {},
+      delete: async () => { },
+      deleteAll: async () => { },
     };
 
-    // Test findAll
     const products = await repository.findAll();
     expect(Array.isArray(products)).toBe(true);
 
-    // Test findById
     const product = await repository.findById(1);
     expect(product).toBeNull();
 
-    // Test create
     const newProduct = await repository.create({
       title: "New Product",
       price: 100,
@@ -115,15 +112,12 @@ describe("ProductRepository Interface", () => {
     expect(newProduct).toHaveProperty("id");
     expect(newProduct).toHaveProperty("title", "New Product");
 
-    // Test update
     const updatedProduct = await repository.update(1, { title: "Updated" });
     expect(updatedProduct).toHaveProperty("id", 1);
     expect(updatedProduct).toHaveProperty("title", "Updated");
 
-    // Test delete
     await expect(repository.delete(1)).resolves.not.toThrow();
 
-    // Test deleteAll
     await expect(repository.deleteAll()).resolves.not.toThrow();
   });
 });

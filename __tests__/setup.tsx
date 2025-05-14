@@ -16,7 +16,6 @@ Object.defineProperty(window, "matchMedia", {
   })),
 });
 
-// Mock do IntersectionObserver
 class MockIntersectionObserver {
   observe = vi.fn();
   unobserve = vi.fn();
@@ -28,7 +27,6 @@ Object.defineProperty(window, "IntersectionObserver", {
   value: MockIntersectionObserver,
 });
 
-// Mock do ResizeObserver
 class MockResizeObserver {
   observe = vi.fn();
   unobserve = vi.fn();

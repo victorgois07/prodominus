@@ -2,7 +2,6 @@ import { Providers } from "@/app/providers";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
-// Create a hoisted mock function
 const mockQueryClient = vi.hoisted(() =>
   vi.fn().mockImplementation(() => ({
     defaultOptions: {
@@ -17,7 +16,6 @@ const mockQueryClient = vi.hoisted(() =>
   }))
 );
 
-// Mock the QueryClientProvider
 vi.mock("@tanstack/react-query", () => ({
   QueryClientProvider: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="query-client-provider">{children}</div>
@@ -33,10 +31,8 @@ describe("Providers", () => {
       </Providers>
     );
 
-    // Check if the QueryClientProvider is rendered
     expect(screen.getByTestId("query-client-provider")).toBeInTheDocument();
 
-    // Check if the children are rendered
     expect(screen.getByText("Test Content")).toBeInTheDocument();
   });
 
@@ -47,7 +43,6 @@ describe("Providers", () => {
       </Providers>
     );
 
-    // Check if QueryClient was initialized with correct options
     expect(mockQueryClient).toHaveBeenCalledWith({
       defaultOptions: {
         queries: {

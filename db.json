@@ -23,6 +23,38 @@
         "rate": 4.2,
         "count": 85
       }
+    },
+    {
+      "title": "Teste",
+      "price": 1000,
+      "description": "Teste teste teste",
+      "category": "Teste",
+      "image": "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg",
+      "id": 3
+    },
+    {
+      "title": "teste 2",
+      "price": 1222,
+      "description": "test teste tes",
+      "category": "teste",
+      "image": "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg",
+      "id": 4
+    },
+    {
+      "title": "teste 3",
+      "price": 12313,
+      "description": "testetetetet",
+      "category": "teste",
+      "image": "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg",
+      "id": 5
+    },
+    {
+      "title": "teste",
+      "price": 123123,
+      "description": "teadasdasdad",
+      "category": "adasda",
+      "image": "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/68dd54ca-60cf-4ef7-898b-26d7cbe48ec7/10-dithering-opt.jpg",
+      "id": 6
     }
   ]
 }
