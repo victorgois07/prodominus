@@ -1,0 +1,362 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Pagination Snapshot > should match snapshot with first page 1`] = `
+<div>
+  <nav
+    class="flex justify-center my-8"
+  >
+    <ul
+      class="inline-flex items-center gap-1"
+    >
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+          disabled=""
+        >
+          Anterior
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-green-500 text-white border border-green-600"
+          disabled=""
+        >
+          1
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          2
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          3
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          4
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          5
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+        >
+          Próxima
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Pagination Snapshot > should match snapshot with last page 1`] = `
+<div>
+  <nav
+    class="flex justify-center my-8"
+  >
+    <ul
+      class="inline-flex items-center gap-1"
+    >
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+        >
+          Anterior
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          1
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          2
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          3
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          4
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-green-500 text-white border border-green-600"
+          disabled=""
+        >
+          5
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+          disabled=""
+        >
+          Próxima
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Pagination Snapshot > should match snapshot with many pages 1`] = `
+<div>
+  <nav
+    class="flex justify-center my-8"
+  >
+    <ul
+      class="inline-flex items-center gap-1"
+    >
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+        >
+          Anterior
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          1
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          2
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          3
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          4
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          5
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          6
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          7
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          8
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          9
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-green-500 text-white border border-green-600"
+          disabled=""
+        >
+          10
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          11
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          12
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          13
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          14
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          15
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          16
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          17
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          18
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          19
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          20
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+        >
+          Próxima
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Pagination Snapshot > should match snapshot with middle page 1`] = `
+<div>
+  <nav
+    class="flex justify-center my-8"
+  >
+    <ul
+      class="inline-flex items-center gap-1"
+    >
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+        >
+          Anterior
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          1
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          2
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-green-500 text-white border border-green-600"
+          disabled=""
+        >
+          3
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          4
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50 bg-white border border-gray-300"
+        >
+          5
+        </button>
+      </li>
+      <li>
+        <button
+          class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+        >
+          Próxima
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Pagination Snapshot > should match snapshot with single page 1`] = `<div />`;

@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Modal Snapshot > should match snapshot when closed 1`] = `<div />`;
+
+exports[`Modal Snapshot > should match snapshot with complex content 1`] = `<div />`;
+
+exports[`Modal Snapshot > should match snapshot with custom size 1`] = `<div />`;
+
+exports[`Modal Snapshot > should match snapshot with long title 1`] = `<div />`;
+
+exports[`Modal Snapshot > should match snapshot with title and children 1`] = `<div />`;

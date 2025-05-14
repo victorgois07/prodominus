@@ -1,0 +1,102 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button Snapshot > should match snapshot with danger variant 1`] = `
+<div>
+  <button
+    class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+    variant="danger"
+  >
+    Danger Button
+  </button>
+</div>
+`;
+
+exports[`Button Snapshot > should match snapshot with disabled state 1`] = `
+<div>
+  <button
+    class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+    disabled=""
+    variant="primary"
+  >
+    Disabled Button
+  </button>
+</div>
+`;
+
+exports[`Button Snapshot > should match snapshot with icon 1`] = `
+<div>
+  <button
+    class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+    icon="plus"
+    variant="primary"
+  >
+    Button with Icon
+  </button>
+</div>
+`;
+
+exports[`Button Snapshot > should match snapshot with large size 1`] = `
+<div>
+  <button
+    class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+    variant="primary"
+  >
+    Large Button
+  </button>
+</div>
+`;
+
+exports[`Button Snapshot > should match snapshot with loading state 1`] = `
+<div>
+  <button
+    class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+    variant="primary"
+  >
+    Loading Button
+  </button>
+</div>
+`;
+
+exports[`Button Snapshot > should match snapshot with long text 1`] = `
+<div>
+  <button
+    class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+    variant="primary"
+  >
+    This is a very long button text that should be properly displayed
+  </button>
+</div>
+`;
+
+exports[`Button Snapshot > should match snapshot with primary variant 1`] = `
+<div>
+  <button
+    class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+    variant="primary"
+  >
+    Primary Button
+  </button>
+</div>
+`;
+
+exports[`Button Snapshot > should match snapshot with secondary variant 1`] = `
+<div>
+  <button
+    class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+    variant="secondary"
+  >
+    Secondary Button
+  </button>
+</div>
+`;
+
+exports[`Button Snapshot > should match snapshot with small size 1`] = `
+<div>
+  <button
+    class="px-4 py-2 rounded font-semibold transition disabled:opacity-50"
+    variant="primary"
+  >
+    Small Button
+  </button>
+</div>
+`;

@@ -1,0 +1,99 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input Snapshot > should match snapshot with disabled state 1`] = `
+<div>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    disabled=""
+    label="Username"
+    name="username"
+  />
+</div>
+`;
+
+exports[`Input Snapshot > should match snapshot with error 1`] = `
+<div>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    error="Password is required"
+    label="Password"
+    name="password"
+  />
+</div>
+`;
+
+exports[`Input Snapshot > should match snapshot with helper text 1`] = `
+<div>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    helpertext="Format: (123) 456-7890"
+    label="Phone"
+    name="phone"
+  />
+</div>
+`;
+
+exports[`Input Snapshot > should match snapshot with icon 1`] = `
+<div>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    icon="search"
+    label="Search"
+    name="search"
+  />
+</div>
+`;
+
+exports[`Input Snapshot > should match snapshot with label 1`] = `
+<div>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    label="Username"
+    name="username"
+  />
+</div>
+`;
+
+exports[`Input Snapshot > should match snapshot with placeholder 1`] = `
+<div>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    label="Email"
+    name="email"
+    placeholder="Enter your email"
+  />
+</div>
+`;
+
+exports[`Input Snapshot > should match snapshot with required field 1`] = `
+<div>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    label="Username"
+    name="username"
+    required=""
+  />
+</div>
+`;
+
+exports[`Input Snapshot > should match snapshot with type password 1`] = `
+<div>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    label="Password"
+    name="password"
+    type="password"
+  />
+</div>
+`;
+
+exports[`Input Snapshot > should match snapshot with value 1`] = `
+<div>
+  <input
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    label="Username"
+    name="username"
+    value="john.doe"
+  />
+</div>
+`;

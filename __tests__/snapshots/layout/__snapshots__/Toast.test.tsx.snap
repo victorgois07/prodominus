@@ -1,0 +1,111 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Toast Snapshot > should match snapshot with error message 1`] = `
+<div>
+  <div
+    class="fixed bottom-4 right-4 px-6 py-3 rounded-lg shadow-lg text-white bg-red-500"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <span>
+        An error occurred. Please try again.
+      </span>
+      <button
+        aria-label="close"
+        class="ml-4 text-white hover:text-gray-200"
+      >
+        ✕
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast Snapshot > should match snapshot with error message containing special characters 1`] = `
+<div>
+  <div
+    class="fixed bottom-4 right-4 px-6 py-3 rounded-lg shadow-lg text-white bg-red-500"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <span>
+        Error: Invalid input! Please check your data (code: #123)
+      </span>
+      <button
+        aria-label="close"
+        class="ml-4 text-white hover:text-gray-200"
+      >
+        ✕
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast Snapshot > should match snapshot with long message 1`] = `
+<div>
+  <div
+    class="fixed bottom-4 right-4 px-6 py-3 rounded-lg shadow-lg text-white bg-green-500"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <span>
+        This is a very long toast message that should be properly displayed and wrapped if necessary. It contains multiple sentences and should be properly formatted.
+      </span>
+      <button
+        aria-label="close"
+        class="ml-4 text-white hover:text-gray-200"
+      >
+        ✕
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast Snapshot > should match snapshot with short message 1`] = `
+<div>
+  <div
+    class="fixed bottom-4 right-4 px-6 py-3 rounded-lg shadow-lg text-white bg-green-500"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <span>
+        Done!
+      </span>
+      <button
+        aria-label="close"
+        class="ml-4 text-white hover:text-gray-200"
+      >
+        ✕
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Toast Snapshot > should match snapshot with success message 1`] = `
+<div>
+  <div
+    class="fixed bottom-4 right-4 px-6 py-3 rounded-lg shadow-lg text-white bg-green-500"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <span>
+        Operation completed successfully!
+      </span>
+      <button
+        aria-label="close"
+        class="ml-4 text-white hover:text-gray-200"
+      >
+        ✕
+      </button>
+    </div>
+  </div>
+</div>
+`;

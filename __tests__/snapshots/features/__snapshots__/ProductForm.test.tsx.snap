@@ -1,0 +1,535 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductForm Snapshot > should match snapshot with empty initial values 1`] = `
+<div>
+  <form
+    class="space-y-4 max-w-md mx-auto"
+  >
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="title"
+      >
+        Título
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="title"
+        name="title"
+        placeholder="Digite o título do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="price"
+      >
+        Preço
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="price"
+        inputmode="numeric"
+        placeholder="R$ 0,00"
+        type="text"
+        value="R$ 0,00"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="description"
+      >
+        Descrição
+      </label>
+      <textarea
+        aria-invalid="false"
+        class="w-full border rounded p-2 min-h-[100px] resize-y"
+        id="description"
+        name="description"
+        placeholder="Digite a descrição do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="category"
+      >
+        Categoria
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="category"
+        name="category"
+        placeholder="Digite a categoria do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="image"
+      >
+        URL da Imagem
+      </label>
+      <div
+        class="space-y-2"
+      >
+        <input
+          aria-invalid="false"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="image"
+          name="image"
+          placeholder="https://exemplo.com/imagem.jpg"
+        />
+      </div>
+    </div>
+    <button
+      class="w-full bg-green-600 text-white py-2 rounded font-semibold disabled:opacity-50 hover:bg-green-700 transition-colors"
+      disabled=""
+      type="submit"
+    >
+      Salvar
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ProductForm Snapshot > should match snapshot with initial values 1`] = `
+<div>
+  <form
+    class="space-y-4 max-w-md mx-auto"
+  >
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="title"
+      >
+        Título
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="title"
+        name="title"
+        placeholder="Digite o título do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="price"
+      >
+        Preço
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="price"
+        inputmode="numeric"
+        placeholder="R$ 0,00"
+        type="text"
+        value="R$ 99,99"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="description"
+      >
+        Descrição
+      </label>
+      <textarea
+        aria-invalid="false"
+        class="w-full border rounded p-2 min-h-[100px] resize-y"
+        id="description"
+        name="description"
+        placeholder="Digite a descrição do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="category"
+      >
+        Categoria
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="category"
+        name="category"
+        placeholder="Digite a categoria do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="image"
+      >
+        URL da Imagem
+      </label>
+      <div
+        class="space-y-2"
+      >
+        <input
+          aria-invalid="false"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="image"
+          name="image"
+          placeholder="https://exemplo.com/imagem.jpg"
+        />
+        <div
+          class="mt-2"
+        >
+          <img
+            alt="Preview"
+            class="max-w-full h-40 object-contain rounded border"
+            height="160"
+            src="test.jpg"
+            width="300"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="w-full bg-green-600 text-white py-2 rounded font-semibold disabled:opacity-50 hover:bg-green-700 transition-colors"
+      disabled=""
+      type="submit"
+    >
+      Salvar
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ProductForm Snapshot > should match snapshot with loading state 1`] = `
+<div>
+  <form
+    class="space-y-4 max-w-md mx-auto"
+  >
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="title"
+      >
+        Título
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        disabled=""
+        id="title"
+        name="title"
+        placeholder="Digite o título do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="price"
+      >
+        Preço
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        disabled=""
+        id="price"
+        inputmode="numeric"
+        placeholder="R$ 0,00"
+        type="text"
+        value="R$ 99,99"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="description"
+      >
+        Descrição
+      </label>
+      <textarea
+        aria-invalid="false"
+        class="w-full border rounded p-2 min-h-[100px] resize-y"
+        disabled=""
+        id="description"
+        name="description"
+        placeholder="Digite a descrição do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="category"
+      >
+        Categoria
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        disabled=""
+        id="category"
+        name="category"
+        placeholder="Digite a categoria do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="image"
+      >
+        URL da Imagem
+      </label>
+      <div
+        class="space-y-2"
+      >
+        <input
+          aria-invalid="false"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          disabled=""
+          id="image"
+          name="image"
+          placeholder="https://exemplo.com/imagem.jpg"
+        />
+        <div
+          class="mt-2"
+        >
+          <img
+            alt="Preview"
+            class="max-w-full h-40 object-contain rounded border"
+            height="160"
+            src="test.jpg"
+            width="300"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="w-full bg-green-600 text-white py-2 rounded font-semibold disabled:opacity-50 hover:bg-green-700 transition-colors"
+      disabled=""
+      type="submit"
+    >
+      Salvando...
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ProductForm Snapshot > should match snapshot with long values 1`] = `
+<div>
+  <form
+    class="space-y-4 max-w-md mx-auto"
+  >
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="title"
+      >
+        Título
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="title"
+        name="title"
+        placeholder="Digite o título do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="price"
+      >
+        Preço
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="price"
+        inputmode="numeric"
+        placeholder="R$ 0,00"
+        type="text"
+        value="R$ 999.999,99"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="description"
+      >
+        Descrição
+      </label>
+      <textarea
+        aria-invalid="false"
+        class="w-full border rounded p-2 min-h-[100px] resize-y"
+        id="description"
+        name="description"
+        placeholder="Digite a descrição do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="category"
+      >
+        Categoria
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="category"
+        name="category"
+        placeholder="Digite a categoria do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="image"
+      >
+        URL da Imagem
+      </label>
+      <div
+        class="space-y-2"
+      >
+        <input
+          aria-invalid="false"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="image"
+          name="image"
+          placeholder="https://exemplo.com/imagem.jpg"
+        />
+        <div
+          class="mt-2"
+        >
+          <img
+            alt="Preview"
+            class="max-w-full h-40 object-contain rounded border"
+            height="160"
+            src="https://example.com/very/long/image/path/that/should/be/properly/displayed/in/the/form.jpg"
+            width="300"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="w-full bg-green-600 text-white py-2 rounded font-semibold disabled:opacity-50 hover:bg-green-700 transition-colors"
+      disabled=""
+      type="submit"
+    >
+      Salvar
+    </button>
+  </form>
+</div>
+`;
+
+exports[`ProductForm Snapshot > should match snapshot with validation errors 1`] = `
+<div>
+  <form
+    class="space-y-4 max-w-md mx-auto"
+  >
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="title"
+      >
+        Título
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="title"
+        name="title"
+        placeholder="Digite o título do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="price"
+      >
+        Preço
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="price"
+        inputmode="numeric"
+        placeholder="R$ 0,00"
+        type="text"
+        value="R$ 99,99"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="description"
+      >
+        Descrição
+      </label>
+      <textarea
+        aria-invalid="false"
+        class="w-full border rounded p-2 min-h-[100px] resize-y"
+        id="description"
+        name="description"
+        placeholder="Digite a descrição do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="category"
+      >
+        Categoria
+      </label>
+      <input
+        aria-invalid="false"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="category"
+        name="category"
+        placeholder="Digite a categoria do produto"
+      />
+    </div>
+    <div>
+      <label
+        class="block mb-1 font-medium"
+        for="image"
+      >
+        URL da Imagem
+      </label>
+      <div
+        class="space-y-2"
+      >
+        <input
+          aria-invalid="false"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="image"
+          name="image"
+          placeholder="https://exemplo.com/imagem.jpg"
+        />
+        <div
+          class="mt-2"
+        >
+          <img
+            alt="Preview"
+            class="max-w-full h-40 object-contain rounded border"
+            height="160"
+            src="test.jpg"
+            width="300"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="w-full bg-green-600 text-white py-2 rounded font-semibold disabled:opacity-50 hover:bg-green-700 transition-colors"
+      disabled=""
+      type="submit"
+    >
+      Salvar
+    </button>
+  </form>
+</div>
+`;

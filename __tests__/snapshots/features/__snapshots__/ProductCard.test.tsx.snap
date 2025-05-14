@@ -1,0 +1,311 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductCard Snapshot > should match snapshot 1`] = `
+<div>
+  <div
+    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative cursor-pointer"
+    role="article"
+  >
+    <div
+      class="absolute top-2 left-2 z-10"
+    >
+      <button
+        aria-label="Adicionar aos favoritos"
+        class="font-semibold transition disabled:opacity-50 p-1 rounded-full bg-gray-100 text-gray-400"
+        type="button"
+      >
+        🤍
+      </button>
+    </div>
+    <div
+      class="absolute top-2 right-2 z-10 flex gap-2"
+    />
+    <div
+      class="relative h-48 w-full"
+    >
+      <img
+        alt="Test Product"
+        class="object-contain p-4"
+        src="test.jpg"
+      />
+    </div>
+    <div
+      class="p-4"
+    >
+      <h3
+        class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2"
+      >
+        Test Product
+      </h3>
+      <p
+        class="text-gray-600 text-sm line-clamp-2 mb-4"
+      >
+        Test Description
+      </p>
+      <div
+        class="flex justify-between items-center"
+      >
+        <span
+          class="text-xl font-bold text-green-600"
+        >
+          R$
+          99,99
+        </span>
+        <span
+          class="text-sm text-gray-500 capitalize"
+        >
+          test
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductCard Snapshot > should match snapshot with high price 1`] = `
+<div>
+  <div
+    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative cursor-pointer"
+    role="article"
+  >
+    <div
+      class="absolute top-2 left-2 z-10"
+    >
+      <button
+        aria-label="Adicionar aos favoritos"
+        class="font-semibold transition disabled:opacity-50 p-1 rounded-full bg-gray-100 text-gray-400"
+        type="button"
+      >
+        🤍
+      </button>
+    </div>
+    <div
+      class="absolute top-2 right-2 z-10 flex gap-2"
+    />
+    <div
+      class="relative h-48 w-full"
+    >
+      <img
+        alt="Test Product"
+        class="object-contain p-4"
+        src="test.jpg"
+      />
+    </div>
+    <div
+      class="p-4"
+    >
+      <h3
+        class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2"
+      >
+        Test Product
+      </h3>
+      <p
+        class="text-gray-600 text-sm line-clamp-2 mb-4"
+      >
+        Test Description
+      </p>
+      <div
+        class="flex justify-between items-center"
+      >
+        <span
+          class="text-xl font-bold text-green-600"
+        >
+          R$
+          999.999,99
+        </span>
+        <span
+          class="text-sm text-gray-500 capitalize"
+        >
+          test
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductCard Snapshot > should match snapshot with long description 1`] = `
+<div>
+  <div
+    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative cursor-pointer"
+    role="article"
+  >
+    <div
+      class="absolute top-2 left-2 z-10"
+    >
+      <button
+        aria-label="Adicionar aos favoritos"
+        class="font-semibold transition disabled:opacity-50 p-1 rounded-full bg-gray-100 text-gray-400"
+        type="button"
+      >
+        🤍
+      </button>
+    </div>
+    <div
+      class="absolute top-2 right-2 z-10 flex gap-2"
+    />
+    <div
+      class="relative h-48 w-full"
+    >
+      <img
+        alt="Test Product"
+        class="object-contain p-4"
+        src="test.jpg"
+      />
+    </div>
+    <div
+      class="p-4"
+    >
+      <h3
+        class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2"
+      >
+        Test Product
+      </h3>
+      <p
+        class="text-gray-600 text-sm line-clamp-2 mb-4"
+      >
+        This is a very long product description that should be truncated in the UI. It contains multiple sentences and should be properly formatted.
+      </p>
+      <div
+        class="flex justify-between items-center"
+      >
+        <span
+          class="text-xl font-bold text-green-600"
+        >
+          R$
+          99,99
+        </span>
+        <span
+          class="text-sm text-gray-500 capitalize"
+        >
+          test
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductCard Snapshot > should match snapshot with long title 1`] = `
+<div>
+  <div
+    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative cursor-pointer"
+    role="article"
+  >
+    <div
+      class="absolute top-2 left-2 z-10"
+    >
+      <button
+        aria-label="Adicionar aos favoritos"
+        class="font-semibold transition disabled:opacity-50 p-1 rounded-full bg-gray-100 text-gray-400"
+        type="button"
+      >
+        🤍
+      </button>
+    </div>
+    <div
+      class="absolute top-2 right-2 z-10 flex gap-2"
+    />
+    <div
+      class="relative h-48 w-full"
+    >
+      <img
+        alt="This is a very long product title that should be truncated in the UI"
+        class="object-contain p-4"
+        src="test.jpg"
+      />
+    </div>
+    <div
+      class="p-4"
+    >
+      <h3
+        class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2"
+      >
+        This is a very long product title that should be truncated in the UI
+      </h3>
+      <p
+        class="text-gray-600 text-sm line-clamp-2 mb-4"
+      >
+        Test Description
+      </p>
+      <div
+        class="flex justify-between items-center"
+      >
+        <span
+          class="text-xl font-bold text-green-600"
+        >
+          R$
+          99,99
+        </span>
+        <span
+          class="text-sm text-gray-500 capitalize"
+        >
+          test
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductCard Snapshot > should match snapshot with missing image 1`] = `
+<div>
+  <div
+    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 relative cursor-pointer"
+    role="article"
+  >
+    <div
+      class="absolute top-2 left-2 z-10"
+    >
+      <button
+        aria-label="Adicionar aos favoritos"
+        class="font-semibold transition disabled:opacity-50 p-1 rounded-full bg-gray-100 text-gray-400"
+        type="button"
+      >
+        🤍
+      </button>
+    </div>
+    <div
+      class="absolute top-2 right-2 z-10 flex gap-2"
+    />
+    <div
+      class="relative h-48 w-full"
+    >
+      <img
+        alt="Test Product"
+        class="object-contain p-4"
+        src="/images/placeholder.svg"
+      />
+    </div>
+    <div
+      class="p-4"
+    >
+      <h3
+        class="text-lg font-semibold text-gray-800 line-clamp-2 mb-2"
+      >
+        Test Product
+      </h3>
+      <p
+        class="text-gray-600 text-sm line-clamp-2 mb-4"
+      >
+        Test Description
+      </p>
+      <div
+        class="flex justify-between items-center"
+      >
+        <span
+          class="text-xl font-bold text-green-600"
+        >
+          R$
+          99,99
+        </span>
+        <span
+          class="text-sm text-gray-500 capitalize"
+        >
+          test
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

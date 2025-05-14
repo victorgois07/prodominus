@@ -1,0 +1,91 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductFilter Snapshot > should match snapshot with categories 1`] = `
+<div>
+  <div
+    class="flex flex-col md:flex-row gap-4 mb-6"
+  >
+    <input
+      class="shadow border rounded focus:shadow-outline mb-6 appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+      placeholder="Search products"
+      type="text"
+      value=""
+    />
+    <div
+      class="mb-6"
+    >
+      <label
+        class="block mb-1 font-medium"
+        for="category-filter"
+      >
+        Categoria
+      </label>
+      <select
+        class="block w-full p-2 border border-gray-300 rounded"
+        id="category-filter"
+      >
+        <option
+          value=""
+        >
+          Todas
+        </option>
+        <option
+          value="electronics"
+        >
+          electronics
+        </option>
+        <option
+          value="clothing"
+        >
+          clothing
+        </option>
+        <option
+          value="books"
+        >
+          books
+        </option>
+        <option
+          value="home"
+        >
+          home
+        </option>
+        <option
+          value="sports"
+        >
+          sports
+        </option>
+      </select>
+    </div>
+    <div
+      class="mb-6"
+    >
+      <label
+        class="block mb-1 font-medium"
+        for="sort-filter"
+      >
+        Ordenar por
+      </label>
+      <select
+        class="block w-full p-2 border border-gray-300 rounded"
+        id="sort-filter"
+      >
+        <option
+          value=""
+        >
+          Padrão
+        </option>
+        <option
+          value="asc"
+        >
+          Preço: Menor para Maior
+        </option>
+        <option
+          value="desc"
+        >
+          Preço: Maior para Menor
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
